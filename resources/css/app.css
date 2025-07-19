@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@source "../views";
+@plugin "daisyui"{
+    themes: light --default;
+}
+
+@plugin "daisyui/theme" {
+    name: "ironfox";
+    default: true;
+    prefersdark: false;
+    color-scheme: "light";
+    --color-base-100: oklch(98% 0 0);
+    --color-base-200: oklch(96% 0.001 286.375);
+    --color-base-300: oklch(92% 0.004 286.32);
+    --color-base-content: oklch(21% 0.006 285.885);
+    --color-primary: oklch(54% 0.245 262.881);
+    --color-primary-content: oklch(97% 0.014 254.604);
+    --color-secondary: oklch(76% 0.177 163.223);
+    --color-secondary-content: oklch(37% 0.077 168.94);
+    --color-accent: oklch(48% 0.243 264.376);
+    --color-accent-content: oklch(97% 0.014 343.198);
+    --color-neutral: oklch(20% 0 0);
+    --color-neutral-content: oklch(98% 0 0);
+    --color-info: oklch(62% 0.214 259.815);
+    --color-info-content: oklch(97% 0.014 254.604);    --color-info-content: oklch(98% 0.019 200.873);
+    --color-success: oklch(62% 0.194 149.214);
+    --color-success-content: oklch(98% 0.031 120.757);
+    --color-warning: oklch(76% 0.188 70.08);
+    --color-warning-content: oklch(98% 0.026 102.212);
+    --color-error: oklch(63% 0.237 25.331);
+    --color-error-content: oklch(97% 0.014 343.198);
+    --radius-selector: 0.5rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}     
+
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+.shrink .sidebar-content {
+    display: none;
+}
+
+.shrink #navLinkDashboard,
+.shrink #navLinkProfile,
+.shrink #navLinkFeedback,
+.shrink #navLinkLogout {
+    justify-content: center !important;
+    cursor: pointer;
+}
+
+.shrink .avatar{
+    display: flex;
+    justify-content: center;
+}
+
+.shrink .lucide{
+    margin-right: 0px;
+}
+
+.shrink .avatar {
+    padding-left: 9px;
+}
+
+.shrink #logo{
+    margin-left: 6px;
+    justify-content: center !important;
+}
+
+.shrink .sidebar-icon {
+    display: block;
+}
+
+.shrink {
+    width: 90px !important;
+}
+
+.shrink+main {
+    margin-left: 90px !important;
+}
+
+
+
+
+.navLink.active {
+    background-color: #2563eb;
+}
